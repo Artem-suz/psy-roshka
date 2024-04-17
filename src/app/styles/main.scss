@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $--font-family-primary, $--font-fallback;
+	font-size: get-theme-for($typography, 'body', 'M', 'size');
+	font-weight: get-theme-for($font-weights, 'regular');
+	color-scheme: light dark;
+	color: $black-400;
+	background-color: $white-400;
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+	text-size-adjust: 100%;
+	transition: $--transition-duration;
+}
+.container {
+	margin: 0 auto;
+	max-width: $content-width-base;
+	width: 95%;
+	@include tablet {
+		width: calc(100% - 80px);
+	}
+	@include phone {
+		width: calc(100% - 20px);
+	}
+}
+.title {
+	font-size: get-theme-for($typography, 'title', 'M', 'size');
+	line-height: get-theme-for($typography, 'title', 'M', 'line-height');
+	@include phone {
+		font-size: get-theme-for($typography, 'title', 'S', 'size');
+		line-height: get-theme-for($typography, 'title', 'S', 'line-height');
+	}
+}
+.title-xl {
+	font-size: get-theme-for($typography, 'title', 'XL', 'size');
+	line-height: get-theme-for($typography, 'title', 'XL', 'line-height');
+	@include tablet {
+		font-size: get-theme-for($typography, 'title', 'L', 'size');
+		line-height: get-theme-for($typography, 'title', 'L', 'line-height');
+	}
+	@include phone {
+		font-size: get-theme-for($typography, 'title', 'S', 'size');
+		line-height: get-theme-for($typography, 'title', 'S', 'line-height');
+	}
+}
+.title-l {
+	font-size: get-theme-for($typography, 'title', 'L', 'size');
+	line-height: get-theme-for($typography, 'title', 'L', 'line-height');
+	@include tablet {
+		font-size: get-theme-for($typography, 'title', 'M', 'size');
+		line-height: get-theme-for($typography, 'title', 'M', 'line-height');
+	}
+	@include phone {
+		font-size: get-theme-for($typography, 'title', 'S', 'size');
+		line-height: get-theme-for($typography, 'title', 'S', 'line-height');
+	}
+}
+.title-s {
+	font-size: get-theme-for($typography, 'title', 'S', 'size');
+	line-height: get-theme-for($typography, 'title', 'S', 'line-height');
+}
+.paragraph {
+	font-size: get-theme-for($typography, 'text', 'M', 'size');
+	line-height: get-theme-for($typography, 'text', 'M', 'line-height');
+}
+.paragraph-l {
+	font-size: get-theme-for($typography, 'text', 'L', 'size');
+	line-height: get-theme-for($typography, 'text', 'L', 'line-height');
+	@include tablet {
+		font-size: get-theme-for($typography, 'text', 'M', 'size');
+		line-height: get-theme-for($typography, 'text', 'M', 'line-height');
+	}
+}
+.paragraph-s {
+	font-size: get-theme-for($typography, 'text', 'S', 'size');
+	line-height: get-theme-for($typography, 'text', 'S', 'line-height');
+}
+input {
+	caret-color: $purple-700;
+	color: $purple-700;
+	&::-moz-placeholder {
+		color: $purple-700;
+		opacity: 0.5;
+		@include phone {
+			font-size: 14px;
+		}
+	}
+	&::-webkit-input-placeholder {
+		color: $purple-700;
+		opacity: 0.5;
+		@include phone {
+			font-size: 14px;
+		}
+	}
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	background-color: $black-400-30p;
+}
+.text-error {
+	color: $red-400;
+	text-align: start;
+	display: block;
+	margin-top: 4px;
+}
+// ! fix of iOS auto zoom
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+select:focus,
+textarea {
+	font-size: 16px;
+	-webkit-tap-highlight-color: transparent;
+}
+// ! fix of iOS input colors
+input:is([type='button'], [type='submit'], [type='reset']),
+input[type='file']::file-selector-button,
+button {
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+// ! fix of iOS shadow
+input:not([type='checkbox'], [type='radio']),
+textarea,
+select:focus {
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+input[type='checkbox'][type='radio'],
+textarea,
+select:focus {
+	-webkit-tap-highlight-color: transparent;
+}
+
+input[type='password'] {
+	&::placeholder {
+		font-family: var(--font-family);
+	}
+
+	font-family: $--font-fallback;
+}
+// ! fix of iOS text-color
+input[disabled],
+textarea[disabled],
+select[disabled] {
+	-webkit-text-fill-color: lighten($purple-700, 30%);
+	-webkit-opacity: 1;
+	color: lighten($purple-700, 30%);
+	-webkit-tap-highlight-color: transparent;
+}
+.highlight {
+	color: $purple-400;
+}

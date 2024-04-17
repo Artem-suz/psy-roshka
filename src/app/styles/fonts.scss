@@ -1,0 +1,21 @@
+@mixin font-face($name, $weight-name, $weight, $style) {
+	@font-face {
+		font-family: $name;
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+		src:
+			local('#{$name}#{$weight-name}'),
+			url('/src/app/assets/fonts/#{$name}/#{$name}#{$weight-name}.woff2') format('woff2'),
+			url('/src/app/assets/fonts/#{$name}/#{$name}#{$weight-name}.woff') format('woff'),
+			url('/src/app/assets/fonts/#{$name}/#{$name}#{$weight-name}.eot') format('eot'),
+			url('/src/app/assets/fonts/#{$name}/#{$name}#{$weight-name}.ttf') format('truetype');
+	}
+}
+@include font-face('nunitoSans', 'Bold', get-theme-for($font-weights, 'bold'), normal);
+@include font-face('nunitoSans', 'SemiBold', get-theme-for($font-weights, 'semi-bold'), normal);
+@include font-face('nunitoSans', 'Regular', get-theme-for($font-weights, 'regular'), normal);
+@include font-face('nunitoSans', 'Light', get-theme-for($font-weights, 'light'), normal);
+@include font-face('roboto', 'Bold', get-theme-for($font-weights, 'bold'), normal);
+@include font-face('roboto', 'Regular', get-theme-for($font-weights, 'regular'), normal);
+@include font-face('roboto', 'Light', get-theme-for($font-weights, 'light'), normal);

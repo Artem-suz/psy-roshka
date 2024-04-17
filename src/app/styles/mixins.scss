@@ -1,0 +1,36 @@
+// media
+@mixin only-desktop {
+	@media screen and (min-width: $--bp-tablet + 1) {
+		@content;
+	}
+}
+
+@mixin tablet-and-higher {
+	@media screen and (min-width: $--bp-phone + 1) {
+		@content;
+	}
+}
+
+@mixin only-tablet {
+	@media screen and (min-width: $--bp-phone + 1) and (max-width: $--bp-tablet) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: $--bp-tablet) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: $--bp-phone) {
+		@content;
+	}
+}
+//
+@mixin gradient-for-button {
+	background: linear-gradient($purple-400);
+	background-size: 540%;
+	transition: background-position 0.5s;
+}

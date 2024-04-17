@@ -1,0 +1,38 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	&__wrapper {
+		width: 100%;
+	}
+	&__field {
+		display: flex;
+		gap: 24px;
+		@include phone {
+			flex-direction: column;
+		}
+		.contact-form__btn.v-button {
+			width: 240px;
+			@include phone {
+				width: 100%;
+			}
+		}
+	}
+	label {
+		display: none;
+	}
+	&__status-message {
+		padding: 16px;
+		background-color: $white-500;
+		border-radius: 16px;
+		border: 1px solid transparent;
+		&.success {
+			color: $green-400;
+			border-color: $green-400;
+		}
+		&.reject {
+			color: $red-400;
+			border-color: $red-400;
+		}
+	}
+}

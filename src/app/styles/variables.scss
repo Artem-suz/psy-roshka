@@ -1,0 +1,93 @@
+// colors
+$white-400: #ffffff;
+$white-500: #f9f9f9;
+$purple-100: #efdff9;
+$purple-400: #b844f9;
+$purple-700: #5115fc;
+$purple-900: #300c96;
+$blue-100: #d4eaff;
+$orange-400: #ebb03e;
+$black-400: #111111;
+$black-400-30p: rgba(
+	$color: $black-400,
+	$alpha: 0.3
+);
+$red-400: #ff0000;
+$green-400: #4fb65a;
+$purple-blue-grad: linear-gradient(90deg, $purple-100 0%, $blue-100 100%);
+$purple-purple-grad-states: linear-gradient(
+	80deg,
+	$purple-400,
+	$purple-400,
+	$purple-700,
+	$purple-700,
+	$purple-700,
+	$purple-900
+);
+$fill-disabled: rgb(#15181d, 0.04);
+$text-disabled: rgb(#a1afb8, 0.4);
+$telegram-blue: #0088cc;
+$whatsapp-green: #25d366;
+// media sizes
+$--bp-tablet: 1024px;
+$--bp-phone: 480px;
+$--bp-small: 320px;
+
+// times
+$--transition-duration: 0.3s ease-in-out;
+
+$typography: () !default;
+$typography: (
+	'title': (
+		'XL': (
+			'size': 50px,
+			'line-height': 68px
+		),
+		'L': (
+			'size': 28px,
+			'line-height': 32px
+		),
+		'M': (
+			'size': 24px,
+			'line-height': 28px
+		),
+		'S': (
+			'size': 16px,
+			'line-height': 24px
+		)
+	),
+	'text': (
+		'L': (
+			'size': 28px,
+			'line-height': 35px
+		),
+		'M': (
+			'size': 16px,
+			'line-height': 24px
+		),
+		'S': (
+			'size': 12px,
+			'line-height': 18px
+		),
+		'XS': (
+			'size': 10px,
+			'line-height': 16px
+		)
+	),
+	'body': (
+		'M': (
+			'size': 16px,
+			'line-height': 24px
+		)
+	)
+);
+$--font-family-primary: 'nunitoSans';
+$--font-fallback: 'roboto', sans-serif, inter, system-ui, avenir, helvetica, arial;
+$font-weights: (
+	'bold': 700,
+	'semi-bold': 600,
+	'regular': 400,
+	'light': 300
+);
+// container
+$content-width-base: 1170px;

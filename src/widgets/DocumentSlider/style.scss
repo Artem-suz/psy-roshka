@@ -1,0 +1,51 @@
+.document-slider {
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&__btn-prev,
+	&__btn-next,
+	&__btn-close {
+		color: $purple-400;
+		top: 50%;
+		z-index: 1;
+		position: absolute;
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (hover: hover) {
+			&:hover {
+				color: lighten($purple-400, 5%);
+			}
+		}
+		@media (hover: none) {
+			&:active {
+				color: darken($purple-400, 5%);
+			}
+		}
+		&:active {
+			color: darken($purple-400, 5%);
+		}
+		@include tablet {
+			display: none;
+		}
+	}
+	&__btn-prev {
+		left: 100px;
+	}
+	&__btn-next {
+		right: 100px;
+	}
+	&__btn-close {
+		top: 0;
+	}
+	&__btn-prev .v-icon {
+		transform: rotateZ(-90deg);
+	}
+	&__btn-next .v-icon {
+		transform: rotateZ(90deg);
+		right: 0;
+	}
+}

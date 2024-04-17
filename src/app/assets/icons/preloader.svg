@@ -1,0 +1,78 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="loading">
+    <path id="Vector 2579 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M11 0.25C11.4142 0.25 11.75 0.585786 11.75 1V4C11.75 4.41421 11.4142 4.75 11 4.75C10.5858 4.75 10.25 4.41421 10.25 4V1C10.25 0.585786 10.5858 0.25 11 0.25Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.8"/>
+    </path>
+    <path id="Vector 2587 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M3.39752 3.39838C3.69041 3.10549 4.16528 3.10549 4.45818 3.39838L6.5795 5.5197C6.87239 5.81259 6.87239 6.28747 6.5795 6.58036C6.2866 6.87325 5.81173 6.87325 5.51884 6.58036L3.39752 4.45904C3.10462 4.16615 3.10462 3.69127 3.39752 3.39838Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.7"/>
+    </path>
+    <path id="Vector 2584 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M4.75 11C4.75 11.4142 4.41421 11.75 4 11.75L1 11.75C0.585786 11.75 0.25 11.4142 0.25 11C0.25 10.5858 0.585786 10.25 1 10.25L4 10.25C4.41421 10.25 4.75 10.5858 4.75 11Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.6"/>
+    </path>
+    <path id="Vector 2586 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M6.58111 15.4195C6.874 15.7124 6.874 16.1873 6.58111 16.4802L4.45979 18.6015C4.1669 18.8944 3.69202 18.8944 3.39913 18.6015C3.10624 18.3086 3.10624 17.8337 3.39913 17.5408L5.52045 15.4195C5.81334 15.1266 6.28822 15.1266 6.58111 15.4195Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.5"/>
+    </path>
+    <path id="Vector 2580 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M11 17.25C11.4142 17.25 11.75 17.5858 11.75 18V21C11.75 21.4142 11.4142 21.75 11 21.75C10.5858 21.75 10.25 21.4142 10.25 21V18C10.25 17.5858 10.5858 17.25 11 17.25Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.4"/>
+    </path>
+    <path id="Vector 2588 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M15.419 15.4194C15.7119 15.1265 16.1868 15.1265 16.4797 15.4194L18.601 17.5407C18.8939 17.8336 18.8939 18.3085 18.601 18.6014C18.3081 18.8943 17.8332 18.8943 17.5403 18.6014L15.419 16.48C15.1261 16.1871 15.1261 15.7123 15.419 15.4194Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.3"/>
+    </path>
+    <path id="Vector 2583 (Stroke)" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M21.75 11C21.75 11.4142 21.4142 11.75 21 11.75L18 11.75C17.5858 11.75 17.25 11.4142 17.25 11C17.25 10.5858 17.5858 10.25 18 10.25L21 10.25C21.4142 10.25 21.75 10.5858 21.75 11Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.2"/>
+    </path>
+
+    <path id="Vector 2585 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M18.6006 3.39849C18.8935 3.69139 18.8935 4.16626 18.6006 4.45915L16.4793 6.58047C16.1864 6.87337 15.7116 6.87337 15.4187 6.58047C15.1258 6.28758 15.1258 5.81271 15.4187 5.51981L17.54 3.39849C17.8329 3.1056 18.3077 3.1056 18.6006 3.39849Z" fill="#fff">
+      <animate 
+        attributeType="XML"
+        attributeName="opacity"
+        dur="0.8s"
+        values="1;0.4"
+        repeatCount="indefinite"
+        begin="0.1"/>
+    </path>
+
+  </g>
+</svg>

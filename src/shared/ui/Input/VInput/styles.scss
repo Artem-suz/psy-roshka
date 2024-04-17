@@ -1,0 +1,77 @@
+.v-input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	transition: all $--transition-duration;
+	border: 1px solid transparent;
+	border-radius: 16px;
+	width: 100%;
+	&__wrapper {
+		width: 100%;
+	}
+	&__element {
+		border: none;
+		outline: none;
+		width: 100%;
+		background: transparent;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 12px 0 12px 12px;
+		height: 56px;
+	}
+
+	// themes
+	&.theme-white {
+		position: relative;
+		color: $purple-700;
+		background-color: $white-400;
+		svg {
+			fill: $purple-700;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				border-color: $purple-700;
+			}
+		}
+		&.focused {
+			border-color: $purple-700;
+		}
+	}
+
+	&__btn-clear {
+		margin-right: 12px;
+		line-height: 0px;
+		padding: 6px;
+		svg {
+			fill: currentColor;
+		}
+
+		@media (hover: hover) {
+			&:hover svg {
+				fill: lighten($purple-700, 15%);
+			}
+		}
+		@media (hover: none) {
+			&:active svg {
+				fill: darken($purple-700, 15%);
+			}
+		}
+		&:active svg {
+			fill: darken($purple-700, 15%);
+		}
+	}
+	&.error {
+		border-color: $red-400;
+		input {
+			color: $red-400;
+		}
+	}
+	&.disabled {
+		border-color: $text-disabled;
+		pointer-events: none;
+		svg {
+			fill: lighten($purple-700, 15%);
+		}
+	}
+}

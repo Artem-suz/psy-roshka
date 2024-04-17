@@ -1,0 +1,522 @@
+@import './styles/';
+.main {
+	margin: 30px 0;
+	.v-button {
+		width: 320px;
+		@include tablet {
+			width: 100%;
+		}
+	}
+	section + section {
+		margin-top: 56px;
+		@include tablet {
+			margin-top: 40px;
+		}
+	}
+	h2 {
+		margin-bottom: 40px;
+		@include tablet {
+			margin-bottom: 24px;
+		}
+	}
+	.title-l {
+		@include phone {
+			font-weight: 700;
+		}
+	}
+	.observer {
+		position: absolute;
+		top: -80px;
+	}
+}
+.presentation {
+	position: relative;
+	display: flex;
+	gap: 30px;
+	max-height: 467px;
+	@include tablet {
+		background: $purple-blue-grad;
+		border-radius: 8px;
+		padding: 16px;
+		gap: 20px;
+	}
+	@media (max-width: 600px) {
+		flex-direction: column-reverse;
+		align-items: center;
+		max-height: unset;
+	}
+	@include phone {
+		padding: 10px 10px 60px 10px;
+		flex-direction: row;
+		align-items: unset;
+	}
+	&__left {
+		position: relative;
+		background: $purple-blue-grad;
+		border-radius: 16px;
+		padding: 32px;
+		@include tablet {
+			background: transparent;
+			padding: 0px;
+			.paragraph-l {
+				padding-bottom: 60px;
+			}
+		}
+		@media (max-width: 600px) {
+			.paragraph-l {
+				padding-bottom: 70px;
+			}
+		}
+		@include phone {
+			flex-shrink: 1;
+			.paragraph-l {
+				padding-bottom: 0px;
+			}
+		}
+	}
+	&__right {
+		position: relative;
+		font-size: 0px;
+		flex-shrink: 0.1;
+		@include tablet {
+			flex-shrink: 1;
+		}
+		@media (max-width: 600px) {
+			max-width: 400px;
+		}
+	}
+	&__introduce {
+		position: absolute;
+		bottom: 28px;
+		right: 14px;
+		background-color: $white-400;
+		padding: 8px 16px;
+		border-radius: 16px;
+		max-width: 422px;
+		text-align: center;
+		@include tablet {
+			display: none;
+		}
+	}
+	&__btn-wrapper {
+		position: absolute;
+		bottom: 32px;
+		@include tablet {
+			bottom: 0px;
+			width: 100%;
+		}
+		&-desktop {
+			@include phone {
+				display: none;
+			}
+		}
+		&-mobile {
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+			width: unset;
+			@include tablet-and-higher {
+				display: none;
+			}
+		}
+	}
+	&__img {
+		// width: 470px;
+		width: 100%;
+		// @include tablet {
+		// 	min-width: 130px;
+		// 	max-width: 470px;
+		// }
+	}
+	.title-xl {
+		font-weight: 700;
+		margin-bottom: 30px;
+		@include tablet {
+			margin-bottom: 6px;
+		}
+		@media (max-width: 600px) {
+			margin-bottom: 14px;
+		}
+	}
+}
+.presentation-mobile {
+	display: none;
+	margin-top: 40px;
+	gap: 20px;
+	@include tablet {
+		display: flex;
+	}
+	&__right {
+		flex-shrink: 0.1;
+		.logo-with-label {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+.feeling {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__list {
+		box-sizing: border-box;
+		text-transform: uppercase;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 800px;
+		height: 350px;
+		@include phone {
+			height: 400px;
+		}
+		// .paragraph {
+		// 	@include phone {
+		// 		font-size: 10px;
+		// 	}
+		// }
+		li {
+			position: absolute;
+			cursor: default;
+			transition: $--transition-duration;
+			@media (hover: hover) {
+				&:hover {
+					color: $purple-400;
+					font-size: 18px;
+				}
+			}
+		}
+		li:nth-child(1) {
+			top: 0%;
+			left: 15%;
+		}
+		li:nth-child(2) {
+			top: 10%;
+			left: 0%;
+		}
+		li:nth-child(3) {
+			top: 18%;
+			right: 0%;
+		}
+		li:nth-child(4) {
+			top: 40%;
+			left: 20%;
+		}
+		li:nth-child(5) {
+			bottom: 0%;
+			left: 44%;
+		}
+		li:nth-child(6) {
+			bottom: 10%;
+			right: 50%;
+		}
+		li:nth-child(7) {
+			bottom: 20%;
+			left: 10%;
+		}
+		li:nth-child(8) {
+			bottom: 10%;
+			right: 10%;
+		}
+		li:nth-child(9) {
+			top: 28%;
+			left: 10%;
+		}
+		li:nth-child(10) {
+			top: 28%;
+			right: 10%;
+		}
+		li:nth-child(11) {
+			bottom: 20%;
+			right: 20%;
+		}
+		li:nth-child(12) {
+			bottom: 30%;
+			left: 10%;
+		}
+		li:nth-child(13) {
+			top: 50%;
+			left: 27%;
+		}
+		li:nth-child(14) {
+			top: 50%;
+			right: 0%;
+		}
+		li:nth-child(15) {
+			top: 40%;
+			left: 30%;
+		}
+	}
+}
+.help {
+	text-align: center;
+	&__content {
+		display: flex;
+		gap: 18px;
+		@include phone {
+			flex-wrap: wrap;
+			gap: 0px;
+		}
+	}
+	&__left,
+	&__right {
+		border-radius: 16px;
+		padding: 25px;
+		background: $purple-blue-grad;
+	}
+	&__left {
+		@include phone {
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			padding-bottom: 8px;
+		}
+	}
+	&__right {
+		@include phone {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			padding-top: 8px;
+		}
+	}
+}
+.why-me {
+	&__content {
+		display: flex;
+		gap: 30px;
+		@include tablet {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__left {
+		padding: 24px;
+		background: $purple-blue-grad;
+		border-radius: 16px;
+		text-align: center;
+		height: fit-content;
+	}
+	&__right {
+		flex-shrink: 0.1;
+		@include tablet {
+			flex-shrink: unset;
+		}
+		@media (max-width: 700px) {
+			width: 100%;
+		}
+	}
+	&__video {
+		border-radius: 16px;
+		@media (max-width: 700px) {
+			width: 100%;
+		}
+	}
+}
+.requests {
+	display: flex;
+	padding: 46px;
+	background: $purple-blue-grad;
+	border-radius: 16px;
+	gap: 62px;
+	@include tablet {
+		flex-direction: column-reverse;
+		gap: 32px;
+	}
+	@include phone {
+		background: unset;
+		padding: 0px;
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 32px;
+		@include tablet {
+			margin-bottom: 24px;
+		}
+	}
+	@include tablet {
+		.logo-with-label {
+			display: none;
+		}
+	}
+	&__left {
+		margin-top: 44px;
+		@include tablet {
+			margin-top: unset;
+		}
+		.logo-with-label {
+			width: 290px;
+			height: 290px;
+		}
+	}
+	&__btn {
+		margin-top: 56px;
+		@include tablet {
+			margin-top: unset;
+		}
+	}
+	&__list {
+		list-style-type: disc;
+		@include phone {
+			padding-left: 16px;
+		}
+		li + li {
+			margin-top: 16px;
+			@include phone {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+.reviews {
+	position: relative;
+}
+.education {
+	padding: 32px;
+	background: $purple-blue-grad;
+	display: flex;
+	gap: 30px;
+	border-radius: 16px;
+	@include tablet {
+		flex-direction: column;
+		align-items: center;
+	}
+	@include phone {
+		padding: 0px;
+		gap: 32px;
+		background: unset;
+	}
+	.title-l {
+		font-weight: 700;
+	}
+	p + p {
+		margin-top: 32px;
+		@include tablet {
+			margin-top: 12px;
+		}
+	}
+	&__right {
+		font-size: 0px;
+	}
+	&__desc-wrapper {
+		@include phone {
+			text-align: center;
+			background: $purple-blue-grad;
+			border-radius: 16px;
+			padding: 16px;
+		}
+	}
+	&__img {
+		cursor: pointer;
+		width: 540px;
+		@include tablet {
+			width: 100%;
+			max-width: 540px;
+		}
+	}
+}
+.contacts {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	padding: 32px;
+	background: $purple-blue-grad;
+	border-radius: 16px;
+	@include tablet {
+		gap: 32px;
+		flex-direction: column;
+	}
+	@include phone {
+		padding: 24px;
+	}
+	&__left {
+		.title-l {
+			margin-bottom: 20px;
+			@include phone {
+				margin-bottom: 16px;
+			}
+		}
+	}
+	&__right {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include tablet {
+			width: 100%;
+		}
+	}
+	&__list {
+		li + li {
+			margin-top: 12px;
+			@include phone {
+				margin-top: 16px;
+			}
+		}
+		li:last-child {
+			display: flex;
+			gap: 20px;
+		}
+	}
+	&__tel,
+	&__mail {
+		color: $black-400;
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: underline;
+				color: $purple-700;
+			}
+		}
+	}
+	&__tg,
+	&__wa {
+		color: $black-400;
+		display: inline-block;
+		transition: color $--transition-duration;
+	}
+	&__tg {
+		@media (hover: hover) {
+			&:hover {
+				color: $telegram-blue;
+			}
+		}
+		@media (hover: none) {
+			&:active {
+				color: darken($telegram-blue, 8%);
+			}
+		}
+		&:active {
+			color: darken($telegram-blue, 8%);
+		}
+	}
+	&__wa {
+		@media (hover: hover) {
+			&:hover {
+				color: $whatsapp-green;
+			}
+		}
+		@media (hover: none) {
+			&:active {
+				color: darken($whatsapp-green, 8%);
+			}
+		}
+		&:active {
+			color: darken($whatsapp-green, 8%);
+		}
+	}
+}
+.sertificate {
+	&__wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			max-width: 920px;
+			@include tablet {
+				width: 90%;
+			}
+		}
+	}
+}

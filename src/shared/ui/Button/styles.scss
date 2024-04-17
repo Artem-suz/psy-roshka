@@ -1,0 +1,62 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+.v-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 12px;
+	overflow: hidden;
+	padding: 16px;
+	max-height: 50px;
+	background-position: get-position-for-button('enabled');
+	@include gradient-for-button;
+	@include phone {
+		padding: 10px;
+		border-radius: 8px;
+	}
+	&__prepend,
+	&__append {
+		display: flex;
+		align-items: center;
+	}
+	&__prepend {
+		margin-right: 12px;
+	}
+	&__append,
+	&__preloader {
+		margin-left: 12px;
+	}
+	// themes
+	&.theme-purple {
+		position: relative;
+		color: $white-400;
+		svg {
+			fill: $white-400;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				background-position: get-position-for-button('hover');
+			}
+		}
+		@media (hover: none) {
+			&:active {
+				background-position: get-position-for-button('pressed');
+			}
+		}
+		&:active {
+			background-position: get-position-for-button('pressed');
+		}
+		&:disabled {
+			background: $fill-disabled;
+			color: $text-disabled;
+			pointer-events: none;
+		}
+	}
+	&.fetching {
+		pointer-events: none;
+		opacity: 0.6;
+	}
+}

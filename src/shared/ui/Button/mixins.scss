@@ -1,0 +1,7 @@
+@mixin gradient-for-button {
+	background: $purple-purple-grad-states;
+	background-size: 540%;
+	transition:
+		background-position 0.5s,
+		opacity $--transition-duration;
+}

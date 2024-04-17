@@ -1,0 +1,54 @@
+.review-card {
+	padding: 24px;
+	border-radius: 16px;
+	width: 100%;
+	background-color: $white-500;
+	@include phone {
+		padding: 12px;
+	}
+	&.open {
+		height: auto;
+		.review-card__paragraph {
+			overflow: visible;
+			-webkit-line-clamp: unset;
+		}
+	}
+	h3 {
+		font-weight: 700;
+	}
+	&__stars {
+		display: flex;
+		gap: 6px;
+		margin: 12px 0;
+		font-size: 0px;
+		@include phone {
+			margin: 7px 0;
+		}
+	}
+	&__btn {
+		margin-top: 8px;
+		color: $purple-700;
+		font-size: get-theme-for($typography, 'text', 'M', 'size');
+		line-height: get-theme-for($typography, 'text', 'M', 'line-height');
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		@include tablet {
+			font-size: get-theme-for($typography, 'text', 'S', 'size');
+			line-height: get-theme-for($typography, 'text', 'S', 'line-height');
+		}
+	}
+	&__paragraph {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		@include phone {
+			&.paragraph {
+				font-size: 14px;
+			}
+		}
+	}
+}
