@@ -60,11 +60,11 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import {VIcon} from '@/shared/ui'
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+'/src/app/assets/images/certificate.png'
 const DATA_DOCUMENT_IMAGES = [
  {
-  webp: '/src/app/assets/images/certificate.webp',
-  png: '/src/app/assets/images/certificate.png',
+  webp: '/psy-roshka/assets/certificate-b2a679ee.webp',
+  png: '/psy-roshka/assets/certificate-b2a679ee.png',
   alt: 'Сертификат Онлайн-институт "Smart" '
  }
 

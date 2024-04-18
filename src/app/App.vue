@@ -216,7 +216,7 @@
               draggable="false"
               loading="lazy"
               decoding="async"
-              alt="Анастасия Рошка"
+              alt="Сертификат онлайн институт Smart"
               @click="displayCertificate"
             >
           </picture>
