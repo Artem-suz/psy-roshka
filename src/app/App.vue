@@ -16,7 +16,8 @@
           </p>
           <div class="presentation__btn-wrapper presentation__btn-wrapper-desktop">
             <v-button 
-              theme="purple">
+              theme="purple"
+              href="#contacts">
               Записаться
             </v-button>
           </div>
@@ -46,7 +47,8 @@
         </div>
         <div class="presentation__btn-wrapper presentation__btn-wrapper-mobile">
           <v-button 
-            theme="purple">
+            theme="purple"
+            href="#contacts">
             Записаться
           </v-button>
         </div>
@@ -144,7 +146,8 @@
         <div class="requests__left">
           <logo-with-label size="150"/>
           <v-button class="requests__btn"
-                    theme="purple">Записаться</v-button>
+                    theme="purple"
+                    href="#contacts">Записаться</v-button>
         </div>
         <div class="requests__right">
           <h2 class="title-l">Запросы, с которомы я работаю</h2>
@@ -300,7 +303,7 @@ import {TheHeader, ReviewSlider, DocumentSlider} from '@/widgets'
 import {GetContactForm} from '@/entities'
 import {VButton, LogoWithLabel, VIcon} from '@/shared/ui'
 
-const isDisplayOverlay = ref(true)
+const isDisplayOverlay = ref(false)
 const isFetching = ref(false)
 const isDisplaySuccessMessage = ref(false)
 const isDisplayRejectMessage = ref(false)

@@ -1,33 +1,43 @@
 <template>
-  <button 
-    :class="['v-button', themeClass, fetchingClass]"
-    :type="type">
-    <span v-if="isPrependSlot"
-          class="v-button__prepend">
-      <slot name="prepend"/>
-    </span>
-
-
-    <slot/>
-
-
-    <transition name="fade"
-                mode="out-in">
-      <span v-if="isAppendSlot && !isFetching"
-            class="v-button__append">
-        <slot name="append" />
+  <div class="v-button__wrapper">
+    <a v-if="href"
+       :href="href"
+       title="Записаться"
+       :class="['v-button', themeClass, fetchingClass]">
+      <slot/>
+    </a>
+    <button v-else
+            :class="['v-button', themeClass, fetchingClass]"
+            :type="type">
+      <span v-if="isPrependSlot"
+            class="v-button__prepend">
+        <slot name="prepend"/>
       </span>
 
-      <v-icon
-        v-else-if="isFetching"
-        size="24"
-        class="v-button__preloader"
-        name="preloader"
-        title="preloader"
-      />
-    </transition>
 
-  </button>
+      <slot/>
+
+
+      <transition name="fade"
+                  mode="out-in">
+        <span v-if="isAppendSlot && !isFetching"
+              class="v-button__append">
+          <slot name="append" />
+        </span>
+
+        <v-icon
+          v-else-if="isFetching"
+          size="24"
+          class="v-button__preloader"
+          name="preloader"
+          title="preloader"
+        />
+      </transition>
+
+    </button>
+
+  </div>
+
 </template>
 <script>
 const THEMES = ['purple']
@@ -45,11 +55,16 @@ const props = defineProps({
   type: Boolean,
   default: false
  },
+ href: {
+  type: String,
+  default: ''
+ },
  theme: {
   type: String,
   required: true,
   validator: value => THEMES.includes(value)
  }
+ 
 })
 const slots = useSlots()
 const themeClass = computed(() => `theme-${props.theme}`)
