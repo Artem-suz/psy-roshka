@@ -65,7 +65,7 @@ import {VInput, InputTelMask, VButton} from '@/shared/ui'
 
 const TEXT_ERROR_TG = 'Ошибка отправки данных'
 const TEXT_SUCCESS_TG = 'Ваша заявка отправлена'
-const TEXT_ERROR_MIN_NAME_LENGTH = 'Минимальная длина имени: 3 символа'
+const TEXT_ERROR_MIN_NAME_LENGTH = 'Минимальная длина имени: 2 символа'
 const TEXT_ERROR_MIN_TEL_LENGTH = 'Минимальная длина номера телефона: 11 символов '
 const TEXT_ERROR_INCORRECT_EMAIL = 'Введенный email некорректен'
 const TEXT_ERROR_ONLY_RUSSIANS_LETTERS = 'Поле дожно содержать только кириллицу'
@@ -101,7 +101,7 @@ const rules = computed(() => ({
   required
  },
  name: {
-  minLength: minLength(3),
+  minLength: minLength(2),
   alpha: val => /^[а-яё\s]*$/i.test(val),
   required
  }

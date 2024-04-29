@@ -60,7 +60,7 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import {VIcon} from '@/shared/ui'
 import 'swiper/css';
 import 'swiper/css/pagination';
-'/src/app/assets/images/certificate.png'
+// '/src/app/assets/images/certificate.png'
 const DATA_DOCUMENT_IMAGES = [
  {
   webp: '/psy-roshka/assets/certificate.webp',

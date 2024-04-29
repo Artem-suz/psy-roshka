@@ -64,9 +64,19 @@
           <logo-with-label size="48"/>
         </div>
       </section>
-      <section class="feeling wow fadeInDown">
-        <h2 class="title-l">Что вы сейчас <b class="highlight">чувствуете</b>?</h2>
-        <ul class="feeling__list">
+      <section class="quote wow fadeInDown">
+        <blockquote :cite="URL_QUOTE">
+          <p class="title-xl">
+            “Мы не можем решать наши проблемы тем же мышлением, которым создавали их”
+          </p>
+          <footer>
+            <p class="title">
+              (Альберт Эйнштейн)
+            </p>
+          </footer>
+        </blockquote>
+        <!-- <h2 class="title-l">Что вы сейчас <b class="highlight">чувствуете</b>?</h2> -->
+        <!-- <ul class="feeling__list">
           <li class="paragraph">ОТСУТСТВИЕ ВИДЕНИЯ БУДУЩЕГО</li>
           <li class="paragraph">Важно, что скажут другие</li>
           <li class="paragraph">эмоциональное выгорание</li>
@@ -81,10 +91,10 @@
           <li class="paragraph">СОМНЕНИЯ И НЕУВЕРЕННОСТЬ</li>
           <li class="paragraph">агрессия</li>
           <li class="paragraph">тревога</li>
-        </ul>
+        </ul> -->
       </section>
       <section class="help wow fadeInDown">
-        <h2 class="title-l">Я здесь, что бы <b class="highlight">помочь</b> Вам </h2>
+        <h2 class="title-l">Я здесь, чтобы <b class="highlight">помочь</b> Вам </h2>
         <div class="help__content">
           <div class="help__left">
             <p class="paragraph">
@@ -124,21 +134,6 @@
                     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen/>
-            <!-- <picture>
-              <source
-                srcset="/src/app/assets/images/roshaka-avatar-labels.webp" 
-                type="image/webp"
-              >
-              <img
-                src="/src/app/assets/images/roshaka-avatar-labels.png"
-                type="image/png"
-                class="why-me__img"
-                draggable="false"
-                loading="lazy"
-                decoding="async"
-                alt="Анастасия Рошка"
-              >
-            </picture> -->
           </div>
         </div>
       </section>
@@ -193,7 +188,7 @@
           <h2 class="title-l">Образование</h2>
           <div class="education__desc-wrapper">
             <p class="paragraph">
-              Учусь много. Регулярно повышаю квалификацию, улучшаю свои знания и технику работы, 
+              Много учусь. Регулярно повышаю квалификацию, улучшаю свои знания и технику работы, 
               прохожу супервизии, интервизии и имею сильную поддержку коллег в проф поле.
             </p>
             <p class="paragraph">
@@ -373,8 +368,9 @@ onMounted(() => {
 
 
 <script>
-const PRESENTATION_TEXT = ref('Меня зовут Анастасия, я психолог, психотерапевт и просто девушка,' +
-' которая идёт свой путь самопознания и развития.<br/> Я безумно люблю свою профессию,' +
+
+const PRESENTATION_TEXT = ref('Приветствую! Меня зовут Анастасия, я психолог, психотерапевт и просто девушка,' +
+' которая движется по своему пути самопознания и развития.<br/> Я очень люблю свою профессию,' +
  ' в которой развиваюсь уже несколько лет.')
 const DATA_REVIEWS = [
  {
@@ -434,6 +430,11 @@ const DATA_REVIEWS = [
 'Мне тяжело открыться людям, и до этого не было такого доверия ни с одним психологом!'
  }
 ]
+const URL_QUOTE = 'https://www.nur.kz/leisure/books/1780446-albert-ejnstejn-citaty-o-zizni/#:~:' + 
+'text=%D0%9C%D1%8B%20%D0%BD%D0%B5%20%D0%BC%D0%BE%D0%B6%D0%B5%D0%BC%20%D1%80%D0%B5%D1%88%D0%B8%D1%'+
+'82%D1%8C%20%D0%BD%D0%B0%D1%88%D0%B8,%D0%BB%D1%8E%D0%B1%D0%BE%D0%BF%D1%8B%D1%82%D1%81%D1%82%D0%B2%D'+
+'0%B0%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D1%8F%20%D0%BF%D1%80%D0%B8%D1%87%D0%B8%D0%BD%D0'+
+'%B0%20%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.'
 // Токен
 const TOKEN = '6778770066:AAE4st_NgV6MmPSXTieP2_QmmBpt4U3_LQs';
 // ID чата
