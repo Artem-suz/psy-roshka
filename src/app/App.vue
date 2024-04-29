@@ -27,11 +27,11 @@
         <div class="presentation__right">
           <picture>
             <source
-              srcset="/src/app/assets/images/roshka-avatar.webp" 
+              srcset="/assets/images/roshka-avatar.webp" 
               type="image/webp"
             >
             <img
-              src="/src/app/assets/images/roshka-avatar.png"
+              src="/assets/images/roshka-avatar.png"
               type="image/png"
               class="presentation__img"
               draggable="false"
@@ -201,11 +201,11 @@
         <div class="education__right">
           <picture>
             <source
-              srcset="/src/app/assets/images/certificate.webp" 
+              srcset="/assets/images/certificate.webp" 
               type="image/webp"
             >
             <img
-              src="/src/app/assets/images/certificate.png"
+              src="/assets/images/certificate.png"
               type="image/png"
               class="education__img"
               draggable="false"
