@@ -63,8 +63,8 @@ import 'swiper/css/pagination';
 // '/src/app/assets/images/certificate.png'
 const DATA_DOCUMENT_IMAGES = [
  {
-  webp: '/psy-roshka/assets/certificate.webp',
-  png: '/psy-roshka/assets/certificate.png',
+  webp: '/assets/certificate.webp',
+  png: '/assets/certificate.png',
   alt: 'Сертификат Онлайн-институт "Smart" '
  }
 
