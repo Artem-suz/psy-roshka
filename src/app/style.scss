@@ -319,6 +319,7 @@
 	}
 	&__right {
 		font-size: 0px;
+		pointer-events: none;
 	}
 	&__desc-wrapper {
 		@include phone {
