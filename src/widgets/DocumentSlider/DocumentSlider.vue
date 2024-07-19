@@ -1,5 +1,4 @@
 <template>
-
   <div class="document-slider__wrapper" >
     <swiper class="document-slider"
             :modules="swiperModules"
@@ -15,12 +14,8 @@
       <swiper-slide v-for="(document, idx) in DATA_DOCUMENT_IMAGES"
                     :key="idx">
         <picture class="sertificate__wrapper">
-          <source
-            :srcset="document.webp" 
-            type="image/webp"
-          >
-          <img :src="document.png"
-               type="image/png"
+          <img :src="document.webp"
+               type="image/webp"
                class="sertificate"
                draggable="false"
                loading="lazy"
@@ -61,13 +56,22 @@ import {VIcon} from '@/shared/ui'
 import 'swiper/css';
 import 'swiper/css/pagination';
 // '/src/app/assets/images/certificate.png'
+// const DATA_DOCUMENT_IMAGES = [
+
+
 const DATA_DOCUMENT_IMAGES = [
  {
-  webp: '/assets/certificate.webp',
-  png: '/assets/certificate.png',
-  alt: 'Сертификат Онлайн-институт "Smart" '
+  webp: '/src/app/assets/images/dip-bak.webp',
+  alt: 'Диплом бакалавра с отличием. Номер: 107704 0514886'
+ },
+ {
+  webp: '/src/app/assets/images/certificate.webp',
+  alt: 'Сертификат Онлайн-институт "Smart"'
+ },
+ {
+  webp: '/src/app/assets/images/sert-mgpu.webp',
+  alt: 'Сертификат "Московский государственный психилого-педагогический университет"'
  }
-
 ]
 
 const swiperModules = [Navigation, Pagination, A11y]

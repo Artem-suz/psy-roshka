@@ -11,11 +11,8 @@
 		@include phone {
 			flex-direction: column;
 		}
-		.contact-form__btn.v-button {
-			width: 240px;
-			@include phone {
-				width: 100%;
-			}
+		.contact-form__btn .v-button {
+			width: 100%;
 		}
 	}
 	label {

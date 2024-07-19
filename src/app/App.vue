@@ -2,6 +2,7 @@
   <the-header/>
   <main class="main">
     <div class="container">
+      
       <section 
         class="presentation wow fadeInDown"
       >
@@ -53,6 +54,7 @@
           </v-button>
         </div>
       </section>
+
       <section class="presentation-mobile wow fadeInDown">
         <div class="presentation-mobile__left">
           <article>
@@ -64,6 +66,7 @@
           <logo-with-label size="48"/>
         </div>
       </section>
+
       <section class="quote wow fadeInDown">
         <blockquote :cite="URL_QUOTE">
           <p class="title-xl">
@@ -75,49 +78,33 @@
             </p>
           </footer>
         </blockquote>
-        <!-- <h2 class="title-l">Что вы сейчас <b class="highlight">чувствуете</b>?</h2> -->
-        <!-- <ul class="feeling__list">
-          <li class="paragraph">ОТСУТСТВИЕ ВИДЕНИЯ БУДУЩЕГО</li>
-          <li class="paragraph">Важно, что скажут другие</li>
-          <li class="paragraph">эмоциональное выгорание</li>
-          <li class="paragraph">НЕУДОВЛЕТВОРЕННОСТЬ СОБОЙ</li>
-          <li class="paragraph">СТРАХ</li>
-          <li class="paragraph">растерянность</li>
-          <li class="paragraph">обида</li>
-          <li class="paragraph">чувство вины</li>
-          <li class="paragraph">боль</li>
-          <li class="paragraph">одиночество</li>
-          <li class="paragraph">апатия</li>
-          <li class="paragraph">СОМНЕНИЯ И НЕУВЕРЕННОСТЬ</li>
-          <li class="paragraph">агрессия</li>
-          <li class="paragraph">тревога</li>
-        </ul> -->
       </section>
+
       <section class="help wow fadeInDown">
         <h2 class="title-l">Я здесь, чтобы <b class="highlight">помочь</b> Вам </h2>
         <div class="help__content">
           <div class="help__left">
             <p class="paragraph">
               Работаю в интегративном подходе. Соединяю различные методы терапии, что 
-              позволяет подобрать нужные ключики к каждому уникальному человеку и решить его проблему.
+              позволяет подобрать необходимые ключи к каждому уникальному человеку и решить его проблему.
             </p>
           </div>
           <div class="help__right">
             <p class="paragraph">
-              Прошла опыт выздоровления от ПРЛ. Было не просто, но у меня получилось благодаря большой 
-              поддержке близких, терапевта и моего внутреннего Взрослого.
+              Прошла опыт выздоровления от ПРЛ, в ходе которого возникали трудности и преграды, 
+              преодолению которых способствовала поддержка близких, терапевта и моего внутреннего Взрослого.
             </p>
           </div>
         </div>
       </section>
+
       <section class="why-me wow fadeInDown">
         <h2 class="title-l"><b class="highlight">Почему я?</b></h2>
         <div class="why-me__content">
           <div class="why-me__left">
             <p class="paragraph">
-              Выбирая меня в качестве своего психолога, вы получите не только поддержку и понимание, 
-              но и индивидуальный подход, направленный на достижение конкретных результатов и улучшение качества жизни.
-              
+              Выбирая меня в качестве своего психолога, вы получите не только поддержку и понимание, но и 
+              индивидуальный подход, направленный на достижение конкретных результатов и улучшение качества жизни.
             </p>
             <p class="paragraph">
               Я помогу вам раскрыть свой потенциал и достичь поставленных целей.
@@ -126,17 +113,18 @@
           <div class="why-me__right">
             <iframe width="620"
                     height="370"
-                    class="why-me__video"
-                    src="https://www.youtube.com/embed/pmNWo4J89Ng?si=oBsS-7oaIKpTGDek&amp;controls=0"
+                    src="https://www.youtube.com/embed/fJFwcziI9Kc?si=ycHaDSWuh4PTwbWM"
                     title="Psy.Roshka"
                     frameborder="0"
-                    allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    class="why-me__video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen/>
           </div>
         </div>
       </section>
+
       <section class="requests wow fadeInDown">
         <div class="requests__left">
           <logo-with-label size="150"/>
@@ -149,13 +137,14 @@
           <ul class="requests__list">
             <li>
               <p class="paragraph">
-                Неудовлетворенность отношениями, конфликты и взаимные обиды, столкновение с 
-                изменой партнёра, созависимость. Неудовлетворенность отдельными сферами своей жизни.
+                Неудовлетворенность отношениями, конфликты и взаимные обиды, 
+                столкновение с изменой партнёра, созависимость.
               </p>
             </li>
             <li>
               <p class="paragraph">
-                Улучшение способов коммуникации — о том, как оказаться услышанным и услышать самому.
+                Улучшение способов коммуникации — о том, как оказаться услышанным и услышать самому. 
+                О том, как быть понятым и понять другого.
               </p>
             </li>
             <li>
@@ -166,47 +155,43 @@
             </li>
             <li>
               <p class="paragraph">
-                Исследование и принятие своих особенностей,  поиск себя.
+                Профессиональное выгорание и карьерные вопросы: усталость от работы, отсутствие мотивации, 
+                неудовлетворенность карьерой, поиск нового профессионального пути.
               </p>
             </li>
             <li>
               <p class="paragraph">
-                Умение находить поддержку и обеспечивать себя поддержкой самостоятельно.
+                Проблемы самооценки и уверенности в себе: низкая самооценка, 
+                неуверенность в своих силах и возможностях, негативное самовосприятие.
               </p>
             </li>
             <li>
               <p class="paragraph">
-                Работа с эмоциональными состояниями: отчаяние, растерянность, злость, агрессия, 
-                панические атаки, страхи, обида, тревога, чувство вины, стресс и тд.
+                Работа с эмоциональными состояниями: отчаяние, растерянность, злость, агрессия, панические атаки, 
+                страхи, обида, тревога, чувство вины, стресс и тд.
               </p>
             </li>
           </ul>
         </div>
       </section>
+
       <section class="education wow fadeInDown">
         <div class="education__left">
           <h2 class="title-l">Образование</h2>
           <div class="education__desc-wrapper">
             <p class="paragraph">
-              Много учусь. Регулярно повышаю квалификацию, улучшаю свои знания и технику работы, 
-              прохожу супервизии, интервизии и имею сильную поддержку коллег в проф поле.
+              Много учусь. Регулярно повышаю квалификацию, улучшаю 
+              свои знания и технику работы, прохожу супервизии, интервизии и 
+              имею сильную поддержку коллег в профессиональном поле. 
             </p>
-            <p class="paragraph">
-              На данный момент я закончила профпереподготовку по программе 
-              «Психолог в социальной сфере», дописываю свою бакалаврскую работу в МГППУ и 
-              постигаю новый психотерапевтический метод-КПТ.
-            </p>
+
           </div>
         </div>
         <div class="education__right">
           <picture>
-            <source
-              srcset="/src/app/assets/images/certificate.webp" 
-              type="image/webp"
-            >
             <img
-              src="/src/app/assets/images/certificate.png"
-              type="image/png"
+              src="/src/app/assets/images/dip-bak.webp"
+              type="image/webp"
               class="education__img"
               draggable="false"
               loading="lazy"
@@ -217,6 +202,7 @@
           </picture>
         </div>
       </section>
+
       <section 
         class="reviews wow fadeInDown">
         <span id="reviews"
@@ -224,6 +210,9 @@
         <h2 class="title-l" >Отзывы</h2>
         <review-slider :dataReviews="DATA_REVIEWS"/>
       </section>
+
+
+      
       <section  
         class="contacts wow fadeInDown">
         <span id="contacts"
@@ -294,9 +283,9 @@
 import { ref, onMounted } from 'vue'
 import WOW from 'wow.js'
 import 'wow.js/css/libs/animate.css'
-import {TheHeader, ReviewSlider, DocumentSlider} from '@/widgets'
-import {GetContactForm} from '@/entities'
-import {VButton, LogoWithLabel, VIcon} from '@/shared/ui'
+import { TheHeader, ReviewSlider, DocumentSlider } from '@/widgets'
+import { GetContactForm } from '@/entities'
+import { VButton, LogoWithLabel, VIcon } from '@/shared/ui'
 
 const isDisplayOverlay = ref(false)
 const isFetching = ref(false)
@@ -316,7 +305,6 @@ function displayAjaxReject() {
 
 // ajax part
 async function submitFormHandler(message) {
-  
  const params = {
   chat_id: CHAT_ID,
   parse_mode: 'html',

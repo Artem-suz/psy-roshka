@@ -11,9 +11,12 @@
         </button>
         <a class="header__logo"
            href="/"
-           title="Logo"
+           title="psy.roshka"
         >
           psy.roshka
+          <v-icon class="header__logo-img"
+                  :size="iconSize"
+                  name="flower"/>
         </a>
         <nav class="header__navigation">
           <ul class="header__navigation-list">
@@ -53,15 +56,30 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { useScreen } from '@/shared/composables'
+import { VIcon } from '@/shared/ui'
+
+const FLOWER_ICON_SIZE = {
+ desktop: '32',
+ tablet: '20'
+}
+
 const breakpointSign = useScreen()
+// бургер меню
 const isOpenMobileNavMenu = ref(false)
 const classDisplayMobileNavigation = computed(() => isOpenMobileNavMenu.value ? 'open' : '')
+
 function handlerDisplayMobileMenu() {
  if (breakpointSign.value === 'xl') {
   return 
  }
+
  isOpenMobileNavMenu.value = !isOpenMobileNavMenu.value
 }
+
+// img label
+const isTabletScreenWidth = computed(() => breakpointSign.value !== 'xl')
+const iconSize = computed(() => isTabletScreenWidth.value ?
+ FLOWER_ICON_SIZE.tablet : FLOWER_ICON_SIZE.desktop)
 </script>
 <style lang="scss">
 @import './styles';

@@ -319,7 +319,6 @@
 	}
 	&__right {
 		font-size: 0px;
-		pointer-events: none;
 	}
 	&__desc-wrapper {
 		@include phone {
@@ -332,6 +331,7 @@
 	&__img {
 		cursor: pointer;
 		width: 540px;
+		border-radius: 16px;
 		@include tablet {
 			width: 100%;
 			max-width: 540px;
@@ -352,6 +352,25 @@
 	}
 	@include phone {
 		padding: 24px;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjAwNzQyIDI0LjU0MjFDNi42Nzg5IDIzLjE2MSA3Ljk0MzU3IDIxLjYxODcgOS40MzM0NyAyMC4yODA1QzcuMjc4ODcgMjAuMTc3NSA1LjE0MDI4IDE5LjcyMSAzLjY2MDA5IDE4Ljk4OTJDMC4wNzQyMzIgMTcuMjE2NCAtMC40MjAxNjggMTIuOTU1MyAxLjEwNjE2IDkuODE1ODVDMi42MzI0OCA2LjY3NjM1IDUuODYxODUgNC4yNTYyNiA5Ljg2MTQ2IDYuMjMzNTlDMTEuNDExOSA3LjAwMDEyIDEzLjAwOTMgOC4zMTgwNyAxNC4zNDI4IDkuODM2NDFDMTQuNDAzMiA3LjU0NTYxIDE0Ljg2MDQgNS4yMzI5NyAxNS42MjQ3IDMuNjYwODFDMTcuMzc3MyAwLjA1NTk2NzEgMjEuNjA5NiAtMC40MzEyMiAyNC43MzI2IDEuMTEyNzJDMjcuODU1NiAyLjY1NjY2IDMwLjI2NzkgNS45MTI5NiAyOC4zMTMxIDkuOTMzNzVDMjcuNTU5MiAxMS40ODQ0IDI2LjI2MzIgMTMuMDgwNSAyNC43Njc3IDE0LjQxNDhDMjYuOTM5MiAxNC40OTgyIDI5LjE2MiAxNC45NzYyIDMwLjg0MyAxNS44MDcyQzM0Ljg0MjYgMTcuNzg0NiAzNC45MjMyIDIxLjg0MTEgMzMuMzk2OSAyNC45ODA2QzMxLjg3MDYgMjguMTIwMSAyOC4yMjc0IDMwLjMzNTYgMjQuNjQxNiAyOC41NjI4QzIzLjE1MSAyNy44MjU5IDIxLjQ3MDMgMjYuMzg1NyAyMC4wNjM5IDI0LjcxNjNDMTkuOTg1MSAyNi44OTc3IDE5LjUxNTggMjkuMTI4NSAxOC42OTU4IDMwLjgxNTFDMTYuNzQxIDM0LjgzNTggMTIuNzEwOSAzNC45MDcxIDkuNTg3OTcgMzMuMzYzMkM2LjQ2NTAxIDMxLjgxOTIgNC4yNTQ4NiAyOC4xNDcgNi4wMDc0MiAyNC41NDIxWk0xMS43NDI5IDE0Ljc0NTFDMTQuNzQ1MiAxNi4yMzQyIDE2LjA4MTYgMTkuODEyOCAxNC43OTAxIDIyLjkwNTJDMTYuMjU4NyAxOS44OTQzIDE5LjgxMzcgMTguNTY2OSAyMi44OTYzIDE5Ljg3ODNDMTkuODk0IDE4LjM4OTIgMTguNTU3NyAxNC44MTA2IDE5Ljg0OTIgMTEuNzE4MkMxOC4zODA2IDE0LjcyOTEgMTQuODI1NSAxNi4wNTY1IDExLjc0MjkgMTQuNzQ1MVoiIGZpbGw9IiNCODQ0RjkiLz4KPC9zdmc+Cg==');
+		width: 140px;
+		height: 140px;
+		background-size: cover;
+		opacity: 0.9;
+		top: -110px;
+		right: 0;
+		z-index: 1;
+
+		@include tablet {
+			width: 64px;
+			height: 64px;
+			top: -40px;
+			right: 0;
+		}
 	}
 	&__left {
 		.title-l {
